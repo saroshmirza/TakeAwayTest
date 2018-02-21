@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="RestaurantCell" customModule="TakeAway" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bd-Xn-MNM">
+                        <rect key="frame" x="16" y="11" width="343" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="qI5-fh-zgn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg9-og-Rer">
+                        <rect key="frame" x="0.0" y="38" width="375" height="21"/>
+                        <color key="backgroundColor" red="0.88513920284299197" green="0.57763671875" blue="0.23751371367332336" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="h25-zI-5dI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD1-7G-oFF">
+                        <rect key="frame" x="329" y="6" width="46" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="oGf-EN-CQe"/>
+                        </constraints>
+                        <state key="normal" title="Fav"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Bd-Xn-MNM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3cZ-C8-wrW"/>
+                    <constraint firstAttribute="bottom" secondItem="Tg9-og-Rer" secondAttribute="bottom" constant="0.5" id="BoC-Wd-XKq"/>
+                    <constraint firstItem="tD1-7G-oFF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="IHc-5i-dQz"/>
+                    <constraint firstItem="8Bd-Xn-MNM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Wf5-NL-rSj"/>
+                    <constraint firstItem="8Bd-Xn-MNM" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Yy1-Vv-KRf"/>
+                    <constraint firstAttribute="trailing" secondItem="Tg9-og-Rer" secondAttribute="trailing" id="jd3-9P-4rh"/>
+                    <constraint firstItem="Tg9-og-Rer" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="k2A-Yr-ttT"/>
+                    <constraint firstItem="Tg9-og-Rer" firstAttribute="top" secondItem="tD1-7G-oFF" secondAttribute="bottom" constant="2" id="wQZ-ok-0hE"/>
+                    <constraint firstAttribute="trailing" secondItem="tD1-7G-oFF" secondAttribute="trailing" id="y4N-cs-qVO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favButton" destination="tD1-7G-oFF" id="era-j7-4fa"/>
+                <outlet property="name" destination="8Bd-Xn-MNM" id="Awf-70-77o"/>
+                <outlet property="status" destination="Tg9-og-Rer" id="2C5-m4-8eu"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="76"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_TakeAwayUITests {
+  umbrella header "Pods-TakeAwayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
